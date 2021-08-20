@@ -82,21 +82,20 @@ android {
                 if (!missingProperties.isEmpty()) {
                     throw new IllegalStateException("Missing required signing properties: $missingProperties")
                 }
+//                storeFile keystoreFile
+//                storePassword project[keystoreFilePassword]
 
-                storeFile keystoreFile
-                storePassword project[keystoreFilePassword]
-
-                keyAlias project[keystoreAlias]
-                keyPassword project[keystoreAliasPassword]
+//                keyAlias project[keystoreAlias]
+//                keyPassword project[keystoreAliasPassword]
             }
         }
 
         buildTypes {
             debug {
-                signingConfig signingConfigs.config
+//                signingConfig signingConfigs.config
             }
             release {
-                signingConfig signingConfigs.config
+//                signingConfig signingConfigs.config
             }
         }
     }
