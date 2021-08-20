@@ -1,12 +1,13 @@
+![logo](./art/markwon_logo.png)
 
 # x-editor
 
-fork from [noties/Markwon](https://github.com/noties/Markwon)
+一个强大的Android 富文本编辑器
+集成[noties/Markwon](https://github.com/noties/Markwon) 和 [sophimp/android-richtext-editor](https://github.com/sophimp/android-richtext-editor)
 
-I want to integrate [sophimp/android-richtext-editor](https://github.com/sophimp/android-richtext-editor) to make a power android rich text editor.
-It provides two mode:
-1. direct edit mode line [sophimp/android-richtext-editor]
-2. meta markdown edit and preview mode
+提供两种模式：
+1. 直接编辑模式，可看到渲染效果(部分语法受限, 如表格)
+2. markdown 语法编辑 + 预览模式(commonmark-spec语法都支持)
 
 [![Build](https://github.com/noties/Markwon/workflows/Build/badge.svg)](https://github.com/noties/Markwon/actions)
 
@@ -301,7 +302,7 @@ Underscores (`_`)
 ## License
 
 ```
-  Copyright 2019 sophimp (sophimp2018@gmail.com)
+  Copyright 2019 Dimitry Ivanov (legal@noties.io)
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
