@@ -1,4 +1,3 @@
-rootProject.name = 'MarkwonProject'
 include ':markwon-core',
         ':markwon-editor',
         ':markwon-ext-latex',

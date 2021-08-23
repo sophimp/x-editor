@@ -63,28 +63,28 @@ android {
         signingConfigs {
             config {
 
-                final def keystoreFile = project.file('keystore.jks')
-                final def keystoreFilePassword = 'MARKWON_KEYSTORE_FILE_PASSWORD'
-                final def keystoreAlias = 'MARKWON_KEY_ALIAS'
-                final def keystoreAliasPassword = 'MARKWON_KEY_ALIAS_PASSWORD'
-
-                final def properties = [
-                        keystoreFilePassword,
-                        keystoreAlias,
-                        keystoreAliasPassword
-                ]
-
-                if (!keystoreFile.exists()) {
-                    throw new IllegalStateException("No '${keystoreFile.name}' file is found.")
-                }
-
-                final def missingProperties = properties.findAll { !project.hasProperty(it) }
-                if (!missingProperties.isEmpty()) {
-                    throw new IllegalStateException("Missing required signing properties: $missingProperties")
-                }
+//                final def keystoreFile = project.file('keystore.jks')
+//                final def keystoreFilePassword = 'MARKWON_KEYSTORE_FILE_PASSWORD'
+//                final def keystoreAlias = 'MARKWON_KEY_ALIAS'
+//                final def keystoreAliasPassword = 'MARKWON_KEY_ALIAS_PASSWORD'
+//
+//                final def properties = [
+//                        keystoreFilePassword,
+//                        keystoreAlias,
+//                        keystoreAliasPassword
+//                ]
+//
+//                if (!keystoreFile.exists()) {
+//                    throw new IllegalStateException("No '${keystoreFile.name}' file is found.")
+//                }
+//
+//                final def missingProperties = properties.findAll { !project.hasProperty(it) }
+//                if (!missingProperties.isEmpty()) {
+//                    throw new IllegalStateException("Missing required signing properties: $missingProperties")
+//                }
 //                storeFile keystoreFile
 //                storePassword project[keystoreFilePassword]
-
+//
 //                keyAlias project[keystoreAlias]
 //                keyPassword project[keystoreAliasPassword]
             }
